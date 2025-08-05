@@ -38,13 +38,6 @@ ul {
     flex-direction: column;
 }
 
-
-.middle {
-    background-image: url(/home/huytran5876/CharlieGraingers/pictures/statefarm.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-
 .content {
     display: flex;
     flex: 1 1 auto;
