@@ -1,63 +1,53 @@
-body {
-    min-height: 100vh;
-}
-
-/*HEADER*/
-header {
-    padding: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: burlywood;
-    font-size: 50px;
-}
-
-.title  {
-    font-weight: bold;
-    font-size: 80px;
-}
-
-:any-link {
-    text-decoration: none;
-}
-
-ul {
-    list-style-type: none;
-    display: flex;
-    gap: 32px;
-    font-size: 50px;
-
-}
-
-/*CONTENT*/
-
-.body,
-.middle {
-    display: flex;
-    flex: 1 1 auto;
-    flex-direction: column;
-}
-
-.content {
-    display: flex;
-    flex: 1 1 auto;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;      
-}
-
-.saying,
 .description {
-    font-size: 30px;
-    background-color: beige;
-    opacity: .8;
+    text-align: center;
+    margin-top: 40px;
 }
 
-@media screen {
-    .middle {
-        flex-direction: row;
+.question-text {
+    font-size: 2em;      /* larger text size */
+    font-weight: bold;
+    margin-bottom: 20px; /* spacing below question */
+}
+
+/* Buttons styling remains the same */
+.description a {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 14px 28px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.2em;
+    min-width: 120px;
+}
+.description a[href^="https://"] {
+    background-color: #28a745;
+}
+.description a[href^="mailto:"] {
+    background-color: #dc3545;
+}
+.description a:hover {
+    opacity: 0.85;
+}
+
+@media (max-width: 600px) {
+    .logo-container img {
+        width: 70%;
+    }
+    .description {
+        font-size: 1.3em;
+    }
+    .question-text {
+        font-size: 1.7em;
+        margin-bottom: 16px;
+    }
+    .description a {
+        display: block;
+        margin: 12px auto;
+        padding: 16px 32px;
+        font-size: 1.3em;
+        min-width: 200px;
     }
 }
-/*FOOTER*/
-
 

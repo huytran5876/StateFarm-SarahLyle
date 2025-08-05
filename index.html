@@ -12,25 +12,31 @@
             margin: 40px 0;
         }
         .logo-container img {
-            width: 100%;        /* almost full width */
-            max-width: 10000px; /* cap size so it doesn’t get too huge */
+            width: 90%;        /* almost full width on desktop */
+            max-width: 1000px; /* cap size */
             height: auto;      /* keep proportions */
         }
+    
+        /* Bigger question section */
         .description {
             text-align: center;
-            margin-top: 30px;
-            font-size: 1.2em;
+            margin-top: 40px;   /* more space from logo */
+            font-size: 1.5em;   /* bigger question text */
+            font-weight: bold;  /* make it stand out */
         }
+    
+        /* Bigger buttons */
         .description a {
             display: inline-block;
-            margin: 0 10px;
-            padding: 10px 20px;
+            margin: 0 15px;
+            padding: 14px 28px;
             text-decoration: none;
             font-weight: bold;
-            border-radius: 6px;
+            border-radius: 8px;
             color: white;
-            font-size: 1em;
+            font-size: 1.2em;  /* bigger button text */
         }
+    
         .description a[href^="https://"] {
             background-color: #28a745; /* green for YES */
         }
@@ -40,18 +46,23 @@
         .description a:hover {
             opacity: 0.85;
         }
+    
+        /* Mobile adjustments */
         @media (max-width: 600px) {
             .logo-container img {
-                width: 95%; /* fill more space on mobile */
-                max-height: 150px; /* limit height on mobile */
-                height: auto;
+                width: 70%;
+            }
+            .description {
+                font-size: 1.3em; /* still larger than before */
             }
             .description a {
-                padding: 14px 24px;
-                font-size: 1.2em;
+                padding: 16px 32px;
+                font-size: 1.3em;
             }
         }
     </style>
+    
+    
     
     
 </head>
@@ -70,9 +81,9 @@
             </div>
             
             <div class="description">
-                Would you be willing to recommend us?
+                <div class="question-text">Would you be willing to recommend us?</div>
                 <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fsearch.google.com%2Flocal%2Fwritereview%3Fplaceid%3DChIJ0y9t5QOnIIYRMVJODUYhPtI&ifkv=AdBytiOkehUzmFqlWTbFMOgEAqoY1sNzmzN6IHPPpguebop5Ysez51WJeGtpPj6UIfRA6ra5vBYVWA&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S874502068%3A1754422996359649">YES</a>
-                <a href="mailto:huytran5876@gmail.com?subject=Review%20Submission&body=Please%20write%20your%20review%20here:">NO</a>
+                <a href="mailto:sarah@getwithsarah.com?subject=Review%20Submission&body=Please%20write%20your%20review%20here:">NO</a>
             </div>
         
         </div>
