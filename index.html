@@ -7,17 +7,51 @@
     <title>FrontPage</title>
     <link rel="stylesheet" href="CSS/styles.css">
     <style>
-        /* You can move this into CSS/styles.css if you want */
         .logo-container {
             text-align: center;
-            margin: 20px 0;
+            margin: 40px 0;
         }
         .logo-container img {
-            width: 10000px;     /* enlarge logo */
-            max-width: 100%;  /* responsive for smaller screens */
-            height: auto;     /* keep proportions */
+            width: 100%;        /* almost full width */
+            max-width: 10000px; /* cap size so it doesn’t get too huge */
+            height: auto;      /* keep proportions */
+        }
+        .description {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 1.2em;
+        }
+        .description a {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 6px;
+            color: white;
+            font-size: 1em;
+        }
+        .description a[href^="https://"] {
+            background-color: #28a745; /* green for YES */
+        }
+        .description a[href^="mailto:"] {
+            background-color: #dc3545; /* red for NO */
+        }
+        .description a:hover {
+            opacity: 0.85;
+        }
+        @media (max-width: 600px) {
+            .logo-container img {
+                width: 95%; /* fill more space on mobile */
+            }
+            .description a {
+                padding: 14px 24px;
+                font-size: 1.2em;
+            }
         }
     </style>
+    
+    
 </head>
 <body class="body">
 
@@ -30,7 +64,7 @@
             <div class="saying"></div>
 
             <div class="logo-container">
-                <img src="https://goodneighborcenter.statefarm.com/images/our-success/logos/2012-SF-logo.png" alt="State Farm Logo">
+                <img src="https://content.presspage.com/uploads/1441/1920_sf-logo-vertical-reversed.png" alt="State Farm Logo">
             </div>
             
             <div class="description">
