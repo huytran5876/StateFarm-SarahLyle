@@ -38,8 +38,9 @@ ul {
     flex-direction: column;
 }
 
+
 .middle {
-    background-image: url(/home/huytran5876/CharlieGraingers/pictures/background.jpg);
+    background-image: url(/home/huytran5876/CharlieGraingers/pictures/statefarm.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -49,7 +50,7 @@ ul {
     flex: 1 1 auto;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    align-items: center;      
 }
 
 .saying,
